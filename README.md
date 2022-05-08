@@ -5,5 +5,5 @@ some intermediate HTML and CSS concepts.
 
 For HTML, form validation is one of the most important concepts at play.
 
-As for CSS, the use of pseudo elements and pseudo classes, custom properties, and absolute and relative positioning 
-are novel techniques which are gratefully being brought into practice.
+As for CSS, the use of pseudo elements and pseudo classes, custom properties, positioning (absolute, fixed etc.)
+and resizing (min, max, clamp) are novel techniques which are gratefully being brought into practice.
