@@ -1,6 +1,7 @@
 :root{
     --background-color: black;
     --logo-background: rgba(0, 0, 0, .5);
+    --logo-text: rgb(255, 255, 255); 
 }
 
 html{
@@ -36,4 +37,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 48px;
+    color: var(--logo-text);
 }
