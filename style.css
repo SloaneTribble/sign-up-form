@@ -1,0 +1,27 @@
+:root{
+    --background-color: black;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    
+}
+
+.main-content-container{
+    background-color: beige;
+    width: min(1000px, calc(70vw + 10px));
+    height: 110vh;
+    margin: -10px 0px;
+    display: flex;
+}
+
+.left-container{
+    width: 50%;
+    height: 100%;
+    background-image: url(./images/flavors.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
