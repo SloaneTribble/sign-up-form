@@ -1,5 +1,6 @@
 :root{
     --background-color: black;
+    --logo-background: rgba(0, 0, 0, .5);
 }
 
 html{
@@ -11,17 +12,28 @@ html{
 
 .main-content-container{
     background-color: beige;
-    width: min(1000px, calc(70vw + 10px));
+    width: min(1000px, 100vw);
     height: 110vh;
     margin: -10px 0px;
     display: flex;
 }
 
 .left-container{
-    width: 50%;
+    position: relative;
+    width: 500px;
     height: 100%;
     background-image: url(./images/flavors.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
+}
+
+.main-logo{
+    position: absolute;
+    top: 100px;
+    width: 500px;
+    height: 20vh;
+    background: var(--logo-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
