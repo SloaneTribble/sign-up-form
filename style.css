@@ -2,6 +2,7 @@
     --background-color: black;
     --logo-background: rgba(0, 0, 0, .5);
     --logo-text: rgb(255, 255, 255); 
+    --main-container-width: 500px;
 }
 
 html{
@@ -11,26 +12,31 @@ html{
     
 }
 
+p{
+    width:  min(50%, var(--main-container-width));
+
+}
+
 .main-content-container{
     background-color: beige;
     width: min(1000px, 100vw);
-    height: 110vh;
+    height: 100vh;
     margin: -10px 0px;
     display: flex;
 }
 
 .left-container{
-    position: relative;
-    width: 500px;
+    position: absolute;
+    width: var(--main-container-width);
     height: 100%;
     background-image: url(./images/flavors.jpg);
-    background-size: cover;
+    background-size: var(--main-container-width) 100vh ;
     background-repeat: no-repeat;
 }
 
-.main-logo{
+.logo-container{
     position: absolute;
-    top: 100px;
+    top: 140px;
     width: 500px;
     height: 20vh;
     background: var(--logo-background);
@@ -38,6 +44,26 @@ html{
     justify-content: center;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 48px;
+    font-size: 52px;
     color: var(--logo-text);
+}
+
+
+.logo-container::after{
+    background-image: url("./images/orange.png");
+    background-size: 44px 44px;
+    margin-left: 4px;
+    width: 44px;
+    height: 44px;
+    content:""; /*Content won't display without this */
+}
+
+.right-container{
+    width: min(500px, 50%);
+}
+
+.description{
+    width: min(500px, 50%);
+ 
+
 }
