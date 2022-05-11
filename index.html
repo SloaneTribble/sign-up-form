@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="./javascript.js" defer></script>
     <div class="main-content-container">
         <div class="left-container">
             <div class="logo-container">
@@ -19,7 +20,62 @@
             
         </div>
         <div class="right-container">
+            <div class="description">
+                <h3>
+                Hey, we're having a great moment.  It's time to enjoy some
+                    tasty flavorful delights the way you want them, and the way you deserve them.
+            </h3>
+                <h3>And the way you need them.</h3>
+                <h3>Find your perfect flavor right now.</h3>
+            </div>
+            <form action="" method="post">
+                <label for="first-name">First Name</label>
+                <input type="text" 
+                       id="first-name" 
+                       name="first-name" 
+                       placeholder="Tasty"
+                       required>
 
+                <label for="last-name">Last Name</label>
+                <input type="text" 
+                       id="last-name" 
+                       name="last-name" 
+                       placeholder="Johanson"
+                       required>
+
+                <label for="email">Email</label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       placeholder="taste@t.com"
+                       required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" 
+                       name="phone" 
+                       id="phone"
+                       placeholder="xxx-xxx-xxxx">
+
+                <label for="password">Password</label>
+                <input type="password"
+                       name="password" 
+                       id="password"
+                       placeholder="Password" 
+                       required>
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" 
+                       name="confirm-password"
+                       id="confirm-password"
+                       placeholder="Confirm Password"
+                       required>
+                <div class="submit-section">
+                    <!-- <button type="submit">Submit</button> -->
+                </div>
+                
+
+
+            </form>
         </div>
     </div>
 </body>
