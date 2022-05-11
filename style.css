@@ -9,25 +9,26 @@ html{
     display: flex;
     justify-content: center;
     background-color: var(--background-color);
+    height: 100vh;
     
 }
 
-p{
-    width:  min(50%, var(--main-container-width));
-
+h3{
+    width: 100%;
+    text-align: center;
 }
 
 .main-content-container{
     background-color: beige;
-    width: min(1200px, 100vw);
+    width: 1300px;
     height: 100vh;
-    margin: -10px 0px;
     display: flex;
+    flex: 1;
 }
 
 .left-container{
     position: relative;
-    width: max(0px, 300px, 500px);
+    width: 500px;
     height: 100%;
     background-image: url(./images/flavors.jpg);
     background-size: var(--main-container-width) 100vh ;
@@ -59,15 +60,14 @@ p{
 }
 
 .right-container{
-    width: 700px;
+    width: clamp(50%, 800px, 100%);
     display: flex;
     flex-direction: column;
 }
 
 .description{
-    width: min(700px, 50%);
-    padding-left: 52px;
-    margin-right: -100px;
+    width: 100%;
+    text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -111,4 +111,19 @@ form{
 .submit-section{
     display: flex;
     padding-bottom: 50px;
+}
+
+@media screen and (max-width: 500px){
+    .left-container{
+        width: 0px;
+    }
+    .right-container{
+        width: 100%;
+    }
+    .main-content-container{
+        width: 500px;
+    }
+    .logo-container{
+        display: none;
+    }
 }
