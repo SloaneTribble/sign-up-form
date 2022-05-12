@@ -12,22 +12,20 @@ html{
     background-color: var(--background-color);
     height: 100vh;
     font-family: 'Raleway', sans-serif;
-
-    
 }
 
 h3{
     width: 100%;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
 }
 
 .main-content-container{
     background-color: beige;
-    width: min(1300px, 100%);
+    max-width: 1300px;
     height: 100vh;
     display: flex;
     flex: 1;
+    justify-self: center;
 }
 
 .left-container{
@@ -110,8 +108,23 @@ form{
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
+
+input{
+    outline: none;
+    border: 2px ridge white;
+}
+
+input:hover{
+    transform: scale(1.05);
+}
+
+input:focus{
+    border: 2px solid blue;
+    transform: scale(1.05);
+}
+
 
 button{
     font-family: inherit;
