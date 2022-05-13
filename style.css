@@ -38,7 +38,7 @@ h3{
     width: 500px;
     min-height: 100vh;
     background-image: url(./images/flavors.jpg);
-    background-size: var(--main-container-width) 100%;
+    background-size: var(--main-container-width) max(100vh, 948px);
     background-repeat: no-repeat;
 }
 
@@ -71,6 +71,17 @@ h3{
     flex:1;
     flex-direction: column;
     margin-top: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+a:link{
+    color: pink;
+}
+
+a:visited{
+    color:aqua;
 }
 
 span{
@@ -221,6 +232,9 @@ button:active {
         width: 100%;
     }
     .logo-container{
+        display: none;
+    }
+    .credits{
         display: none;
     }
 }
