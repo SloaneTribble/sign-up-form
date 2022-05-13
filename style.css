@@ -17,10 +17,13 @@ html{
 h3{
     width: 100%;
     text-align: center;
+    font-size:1.4rem;
+    font-weight: 500;
+    color:#0a0031;
 }
 
 .main-content-container{
-    background-color: beige;
+    background-image: linear-gradient(45deg, beige, orange);
     max-width: 1300px;
     height: 100vh;
     display: flex;
@@ -70,7 +73,7 @@ h3{
 
 .description{
     width: calc(100%-45px);
-    padding: 62px 45px 0px;
+    padding: 78px 45px 0px;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -100,20 +103,34 @@ form{
     padding: 100px 20px;
     display:flex;
     flex: 1;
-    column-gap: 20px;
+    column-gap: 50px;
+    color:#0a0031;
 }
 
 .inputs1,
 .inputs2{
     display: flex;
     flex-direction: column;
-    flex: 1;
     justify-content: space-between;   
+}
+
+
+/* Using p element to cause label and input to stack */
+p{
+    margin-top: -8px;
 }
 
 input{
     outline: none;
     border: 2px ridge white;
+    width: 140px;
+    height: 20px;
+    margin-top: -30px;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    padding-left: 3px;
 }
 
 input:hover,
@@ -123,6 +140,7 @@ button:hover{
 
 input:focus{
     border: 2px solid blue;
+    box-shadow: 0px 3px 3px rgba(0,0,0,.2);
     transform: scale(1.05);
 }
 
@@ -134,6 +152,7 @@ input:focus{
     align-items: center;
     flex: 1;
     border-top: 2px groove grey;
+    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,.2);
     background: bisque;
 }
 
